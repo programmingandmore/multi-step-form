@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./multistageform.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <form id="signupform" form>
+        <h1>Sign up to get updates from us.</h1>
+        <div stages>
+            <div form-stage class="">
+                <label for="">Email</label>
+                <input type="email" required/>
+                <label for="">First Name</label>
+                <input type="text" required/>
+                <label for="">Last Name</label>
+                <input type="text">
+                <div style="position: relative;">
+                    <input type="button" value="Next" form-next/>
+                </div>
+            </div>
+            <div form-stage class="">
+                <label for="">Github name</label>
+                <input type="text" required/>
+                <label for="">Linked profile link</label>
+                <input type="text">
+                <div style="position: relative;">
+                    <input type="button" value="Prev" form-prev/>
+                    <input type="button" value="Next" form-next/>
+                </div>
+            </div>
+            <div form-stage>
+                <label for="">Password</label>
+                <input type="password" required/>
+                <label for="">Confirm Password</label>
+                <input type="password" required/>
+                <input type="submit" style="width:100%;" />
+                <div style="position: relative;">
+                    <input type="button" value="Prev" form-prev/>
+                    <!-- <button form-next>Next</button> -->
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
